@@ -14,7 +14,7 @@ function App() {
       setFormData(form);
       setLoading(true);
       setRoadmap(''); 
-      const response = await fetch('https://localhost:44378/api/RoadMap/generate', {
+      const response = await fetch('https://aimockinterviewapp-1.onrender.com/api/RoadMap/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -43,7 +43,7 @@ function App() {
   };
   const handleDownload = async () => {
   try {
-    const response = await fetch('https://localhost:44378/api/RoadMap/download', {
+    const response = await fetch('https://aimockinterviewapp-1.onrender.com/api/RoadMap/download', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
